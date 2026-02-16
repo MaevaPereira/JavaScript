@@ -1,67 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-    </head>
-    <body>
 
-        <h1>Exercice 0</h1>
+<head>
+    <meta charset="utf-8">
+</head>
 
-        <script type="text/javascript">
+<body>
 
-        /* Section 1 */   
+    <h1>Exercice 0</h1>
 
-        var name = "Joe";
-        var city = 'London';
-        var age = 32;
-        var isRed = true;
-        var isOld = age > 80;
+    <script type="text/javascript">
 
-        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
+        /* Section 1 */
 
-        function info(height, weight) {
-            if (height > 180) {
-                console.log('Vous êtes grand');
+        var name = "Joe"; //affecte "Joe" à la variable name
+        var city = 'London';  //affecte "London" à la variable city
+        var age = 32;  //affecte l'entier 32 à la variable age
+        var isRed = true;  //affecte le boolean à la variable isRed
+        var isOld = age > 80;  //affecte un age supérieur à 80 à la variable isOld
+
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber']; // affecte plusieurs valeurs à la variable previousJobs
+
+        function info(height, weight) { //création de la fonction info qui a pour paramètre height + weight
+            if (height > 180) { // si la hauteur est supérieur à 180 alors
+                console.log('Vous êtes grand'); // la console affiche 'Vous êtes grand'
             }
-            if (weight < 0) {
-                console.log('oups, there is a problem');
-            } else if ( weight < 15) {
-                console.log('Are you that slim ?')
-            } else {
-                console.log('Good !')
+            if (weight < 0) { //si le poids est inférieur à 0 alors
+                console.log('oups, there is a problem'); // la console affiche 'oups, there is a problem'
+            } else if (weight < 15) { //sinon si le poids est inférieur à 15 alors
+                console.log('Are you that slim ?') // la console affiche 'Are you that slim ?'
+            } else { //sinon 
+                console.log('Good !') // la console affiche 'Good !'
             }
+        } //fermeture de la fonction
+
+        info(165, 45); // appelle la fonction info qui prend en paramètre 165 et 45
+
+        var myHeight = 175; // variable myHeight qui prend pour valeur 175
+        var myWeight = 86; // variable myHeight qui prend pour valeur 85
+
+        info(myHeight, myWeight); //appelle la fonction info qui prend en paramètre myHeight et myWeight
+
+        info(myHeight + 15, myWeight - 100); //appelle la fonction info qui prend en paramètre myHeight +15 et myWeight -100
+
+        function toUpper(variable) { // fonction toUpper qui aura en paramètre variable
+            return variable.toUpperCase(); // retourne  variable.toUpperCase() en majuscule
         }
 
-        info(165, 45);
+        var upperName = toUpper(name); // affecte à la variable upperName le nom en majuscule "JOE"
 
-        var myHeight = 175;
-        var myWeight = 86;
-
-        info(myHeight, myWeight);
-
-        info(myHeight + 15, myWeight - 100);
-
-        function toUpper(variable) {
-            return variable.toUpperCase();
-        }
-
-        var upperName = toUpper(name);
-
-        for (i = 0; i < 3; i = i + 1) {
-            console.log(previousJobs[i]);
+        for (i = 0; i < 3; i = i + 1) {  // creation d'une boucle for quand on sait combien de fois, ici tant que i est inférieur à 3 la boucle continue
+            console.log(previousJobs[i]); //la console affiche la valeur de previousJobs qui aura un index i.
         }
 
         /* Section 2: */
 
-        // afficher la ville dans laquele Joe vit.     
+        // afficher la ville dans laquele Joe vit.
+        console.log(city);
 
         // afficher si Joe est roux ou pas.
+        console.log(isRed);
 
         /* Section 3 */
+        console.log(myVariable); //la variable n'est pas définit donc erreur
 
-        // console.log(myVariable);
+    </script>
 
-        </script>
+</body>
 
-    </body>
 </html>
