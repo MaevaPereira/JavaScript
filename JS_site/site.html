@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" type="module"></script>
+    <script src="app.js" defer></script>
     <title>
         Accueil
     </title>
@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <header>
         <div class="fond_nom_site">
             <p>
@@ -21,13 +20,23 @@
             </p>
         </div>
     </header>
+
+
     <nav>
         <div class="navigation">
+<!--dropdown-->
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#a_propos">A propos</a>
+                <a href="#niveau">Niveau</a>
+                <a href="#devis">Devis</a>
+            </div>
+        </div>
 
             <div class="page_actif">
                 Accueil
             </div>
-
 
             <a class="lien" href="nos_voyages.html">
                 <div class="nos_voyages">
@@ -40,64 +49,66 @@
                     contact
                 </div>
             </a>
-
         </div>
     </nav>
+
     <main>
         <div id="feed-container">
-            <!--
-            <div class="container">
-                <div class="trip">
+            <div id="container">
+<!--                <div class="trip">-->
+<!--                    <div class="photo_trip">-->
+<!--                        <p>-->
+<!--                            image voyage 1-->
+<!--                        </p>-->
+<!--                    </div>-->
 
-                    <div class="photo_trip">
-                        <p>
-                            image trip 1
-                        </p>
-                    </div>
+<!--                    <div class="texte_trip">-->
+<!--                        <h1>-->
+<!--                            Lune-->
+<!--                        </h1>-->
+<!--                        <p >-->
+<!--                            text descriptif trip 1-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                </div>-->
 
-                    <div class="text_trip">
-                        <h1>
-                            Lune
-                        </h1>
-                        <p class="texte_produit">
-                            text descriptif trip 1
-                        </p>
-                    </div>
-                </div>
-                <div class="trip">
-                    <div class="photo_trip">
-                        <p>
-                            image trip2
-                        </p>
-                    </div>
-                    <div class="text_trip">
-                        <h1>
-                            Mars
-                        </h1>
-                        <p class="texte_produit">
-                            text descriptif trip 2
-                        </p>
-                    </div>
-                </div>
-                <div class="trip">
-                    <div class="photo_trip">
-                        <p>
-                            image trip3
-                        </p>
-                    </div>
-                    <div class="text_trip">
-                        <h1>
-                            Jupiter
-                        </h1>
-                        <p class="texte_produit">
-                            text descriptif trip 3
-                        </p>
-                    </div>
-                </div>
-            </div>
-            -->
+<!--                <div class="trip">-->
+
+<!--                    <div class="photo_trip">-->
+<!--                        <p>-->
+<!--                            image voyage 2-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                    <div class="texte_trip">-->
+<!--                        <h1>-->
+<!--                            Mars-->
+<!--                        </h1>-->
+
+<!--                        <p class="texte_produit">-->
+<!--                            text descriptif trip 2-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="trip">-->
+<!--                    <div class="photo_trip">-->
+<!--                        <p>-->
+<!--                            image voyage 3-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                    <div class="texte_trip">-->
+<!--                        <h1>-->
+<!--                            Jupiter-->
+<!--                        </h1>-->
+<!--                        <p class="texte_produit">-->
+<!--                            text descriptif trip 3-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                </div>-->
+           </div>
         </div>
     </main>
+
+
     <footer>
         <div class="footer">
 
@@ -108,6 +119,8 @@
             </div>
         </div>
     </footer>
+
+
 </body>
 
 </html>
