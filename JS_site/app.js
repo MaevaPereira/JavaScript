@@ -54,41 +54,28 @@ window.addEventListener('load', function () {
 
 //dropdown
 function myFunction() {
-        //alert() pour vérifier si le bouton fonctionne
-    document.getElementById("myDropdown").classList.toggle("show");
+        document.getElementById("myDropdown").classList.toggle("show");
 }
 
+//FORMULAIRE DYNAMIQUE
+function getInputValue() {
+    const inputValue = document.getElementById("avis").value;
+        const newElement = document.createElement("p"); // créer un élément <p>
+        newElement.innerText = inputValue; // mettre le texte dedans
+        document.getElementById("output").appendChild(newElement);  // l'ajouter dans la div output
+        document.getElementById("avis").value = ""; // vider le champ après envoi
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+//FIN FORMULAIRE DYNAMIQUE
 
 
 
 
 /*
-function displayFeed() {
-    
+function getInputValue() {
+    const inputValue = document.getElementById("avis").value;
+    document.createElement("output").innerText = "output";
+    const newElement = document.createElement("avis");
+    inputValue.appendChild("avis", newElement);
 }
-let paragraphe = document.createElement('p');
-paragraphe.textContent = articles.value;
 */
