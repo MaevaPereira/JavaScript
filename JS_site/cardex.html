@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>
+        Cardex
+    </title>
+
+</head>
+
+<body>
+<header>
+    <div class="bandeau">
+        <p>
+            My Cardex
+        </p>
+    </div>
+</header>
+
+<nav>
+    <div class="nav">
+        <!--dropdown-->
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#commune">Commune</a>
+                <a href="#rare">Rare</a>
+                <a href="#unique">Unique</a>
+            </div>
+        </div>
+
+        <a class="lien" href="site.html">
+            <div class="nos_voyages">
+                Accueil
+            </div>
+        </a>
+    </div>
+</nav>
+
+<main>
+
+        <div id="container"></div>
+        <!--contenu article JS ici-->
+
+        <!--IMAGE GALERIE-->
+        <h1>Images: </h1>
+        <div id="gallery">
+            <button type="button" onclick=" picture()">boucle</button>
+
+            <button type="button" onclick=" add()">ajouter</button>
+            <button id="supp">Supprimer</button>
+            <div id="addPic"></div>
+
+        </div>
+    <!--FIN IMAGE GALERIE-->
+
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="photo_logo">
+            <p>
+                logo site
+            </p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

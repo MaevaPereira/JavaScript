@@ -16,17 +16,17 @@ body {
 
 .fond_nom_site {
     background-color: rgb(80, 76, 134);
-    padding: 20px;
+    margin: 20px;
+    text-align: center;
 }
 
 p {
-    text-align: center;
+    margin: 15px;
 }
 
 /*Nav*/
 .navigation {
     background-color: rgb(126, 126, 126);
-    padding: 20px;
     display: flex;
     justify-content: flex-end;
 }
@@ -41,7 +41,6 @@ p {
 .nos_voyages:hover {
     border-color: #4F0002;
     color: #4F0002;
-    box-shadow: none;
 }
 
 .page_actif {
@@ -54,22 +53,12 @@ p {
     text-align: center;
 }
 
-.nos_voyages {
+.nos_voyages, .contact {
     background-color: rgba(135, 36, 155, 0.925);
     padding: 10px;
     width: 100%;
     border-width: 1px;
     color: white;
-    border-style: solid;
-    text-align: center;
-}
-
-.contact {
-    background-color: rgb(175, 23, 206);
-    padding: 10px;
-    width: 100%;
-    border-width: 1px;
-    color: #ffffff;
     border-style: solid;
     text-align: center;
 }

@@ -5,7 +5,7 @@ console.log('exo-3');
 const playerInput = prompt("Your choice ( rock, paper, scissors) ?");
 
 
-let pc = rock, paper, scissors;
+//let pc = rock, paper, scissors;
 
 function getPlayerChoice(playerInput) {
     if (playerInput.toLowerCase() === 'paper') {
@@ -15,7 +15,7 @@ function getPlayerChoice(playerInput) {
     } else if (playerInput.toLowerCase() === 'scissors') {
         console.log('scissors');
     } else {
-        console.log('ERROR');
+        console.error('ERROR');
     }
     return playerInput.toLowerCase();
 

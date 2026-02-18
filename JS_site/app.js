@@ -69,6 +69,76 @@ function getInputValue() {
 //FIN FORMULAIRE DYNAMIQUE
 
 
+//boucle images
+const gallery = [
+        {image: "altered/vendangeur.webp"},
+        {image: "altered/kitsune.webp"},
+        {image: "altered/coucou.webp"},
+        {image: "altered/dodo.webp"},
+        {image: "altered/contorsionniste.webp"},
+        {image: "altered/fille.webp"},
+        {image: "altered/meet.webp"}
+    ];
+
+function picture(){
+    for (let image of gallery) {
+        const img = document.createElement("img");
+        img.src = image.image;
+        container.appendChild(img);
+    }
+}
+
+function add(){
+    const img = document.createElement("img");
+    img.src = "altered/dodo.webp";
+
+    const src = document.getElementById("addPic");
+    src.appendChild(img);
+}
+
+
+
+const deleteButton = document
+    .getElementById('supp');
+const imageElement = document
+    .getElementById('addPic');
+
+deleteButton.addEventListener('click',
+    function () {
+        imageElement.parentNode.removeChild(addPic);
+    });
+
+
+    /*
+function supp(){
+    const img = document.getElementById("addPic");
+    img.src = "galerie/devine.webp";
+
+    const del = document.removeChild(img);
+    src.appendChild(img);
+    const supprimer = document.getElementById('deleteButton');
+    const img = document.getElementById('addPic');
+
+    supprimer.addEventListener('click', function () {
+            img.parentNode.removeChild(img);
+        });
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*

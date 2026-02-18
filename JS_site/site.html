@@ -16,7 +16,7 @@
     <header>
         <div class="fond_nom_site">
             <p>
-                nom site
+                This is a lazy site
             </p>
         </div>
     </header>
@@ -25,30 +25,30 @@
     <nav>
         <div class="navigation">
 <!--dropdown-->
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Menu</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="#a_propos">A propos</a>
-                <a href="#niveau">Niveau</a>
-                <a href="#devis">Devis</a>
-            </div>
-        </div>
-
-            <div class="page_actif">
-                Accueil
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Menu</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#commun">commun</a>
+                    <a href="#rare">rare</a>
+                    <a href="#unique">unique</a>
+                </div>
             </div>
 
-            <a class="lien" href="nos_voyages.html">
-                <div class="nos_voyages">
-                    Nos voyages
+                <div class="page_actif">
+                    Accueil
                 </div>
-            </a>
 
-            <a class="lien" href="contact.html">
-                <div class="contact">
-                    contact
-                </div>
-            </a>
+                <a class="lien" href="cardex.html">
+                    <div class="nos_voyages">
+                         Cardex
+                    </div>
+                </a>
+
+                <a class="lien" href="contact.html">
+                    <div class="contact">
+                        contact
+                    </div>
+                </a>
         </div>
     </nav>
 
@@ -64,65 +64,29 @@
             <div id="output"></div>
             <div id="posts"></div>
 <!--FIN FORMULAIRE DYNAMIQUE-->
+            <div id="container"></div>
+<!--contenu article JS ici-->
 
-            <div id="container">
-<!--                <div class="trip">-->
-<!--                    <div class="photo_trip">-->
-<!--                        <p>-->
-<!--                            image voyage 1-->
-<!--                        </p>-->
-<!--                    </div>-->
+<!--IMAGE GALERIE-->
+        <h1>Images: </h1>
+            <div id="gallery">
+                <button type="button" onclick=" picture()">boucle</button>
 
-<!--                    <div class="texte_trip">-->
-<!--                        <h1>-->
-<!--                            Lune-->
-<!--                        </h1>-->
-<!--                        <p >-->
-<!--                            text descriptif trip 1-->
-<!--                        </p>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <button type="button" onclick=" add()">ajouter</button>
+                <div id="addPic"></div>
+                <button id="supp">Supprimer</button>
 
-<!--                <div class="trip">-->
 
-<!--                    <div class="photo_trip">-->
-<!--                        <p>-->
-<!--                            image voyage 2-->
-<!--                        </p>-->
-<!--                    </div>-->
-<!--                    <div class="texte_trip">-->
-<!--                        <h1>-->
-<!--                            Mars-->
-<!--                        </h1>-->
-
-<!--                        <p class="texte_produit">-->
-<!--                            text descriptif trip 2-->
-<!--                        </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="trip">-->
-<!--                    <div class="photo_trip">-->
-<!--                        <p>-->
-<!--                            image voyage 3-->
-<!--                        </p>-->
-<!--                    </div>-->
-<!--                    <div class="texte_trip">-->
-<!--                        <h1>-->
-<!--                            Jupiter-->
-<!--                        </h1>-->
-<!--                        <p class="texte_produit">-->
-<!--                            text descriptif trip 3-->
-<!--                        </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-           </div>
+<!--                <button type="button" onclick=" supp()">supprimer</button>-->
+<!--                <button type="button" id = "supprimer">supprimer</button>-->
+            </div>
         </div>
-    </main>
+<!--FIN IMAGE GALERIE-->
 
+    </main>
 
     <footer>
         <div class="footer">
-
             <div class="photo_logo">
                 <p>
                     logo site
@@ -131,7 +95,5 @@
         </div>
     </footer>
 
-
 </body>
-
 </html>
